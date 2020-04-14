@@ -6,42 +6,45 @@
         <meta name="description" content="Welcome to Edubridge Academy Work Simulation Program.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
         <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500,700,800,900&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="icon" href="img/edu_logo_black.png" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/navbar_footer.css">
 
-        <title>Edubridge Academy
-        </title>
-</head>
-<body>
+        <title>Edubridge Academy</title>
+
     <div class = "container-fluid main-view">
+
 <!-- ==== Mobile Nav bar === -->
 <div class="row" id="mb-nav" style="width:100%; padding-top:38px; padding-left:10px;">
     <div class="col-12"><a href ="index.html"><img src="img/edu_logo_black.png" class="img" style="height:37px; width:83px;"></a>
-      <a id="toggler" style="font-size:33px; color:black; cursor:pointer;" onclick="openNav()">&#9776;</a></div>
-  </div>
+      <a id="toggler" style="font-size:33px; color:black; cursor:pointer;" onclick="openNav()">&#9776;</a>
+    </div>
+</div>
   <div id="myNav" class="overlay">
     <div class="row" style="padding-top:38px;">
       <div class="col-3"><a href ="index.html"><img src="img/edu_logo_black.png" class="img" style="height:40px; width:86px;"></a></div>
 
       <div class="col-6"></div>
+
       <div class="col-3"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       </div>
     </div>
 
     <div class="row overlay-content">
       <div class="col-12">
-        <a href="http://blog.edubridgeacademy.com/">Blog</a>
+        <a href="https://blog.edubridgeacademy.com/">Blog</a>
         <a href="#">EduTech Solutions</a>
-        <a href="#">Tracks</a>
+        <a href="tracks.html">Tracks</a>
         <a href="#">The Process</a>
       </div>
       <div class="col-12" style="margin-top:20px; text-decoration: underline;">
-        <a href="#">Login</a>
+        <a href="login.html">Login</a>
 
       </div>
       <div class="col-12" style="margin-left:5%; margin-top:40px;">
@@ -54,8 +57,7 @@
 
   <div class="row navbar navbar-dark navbar-expand-xl" id="nav">
     <!-- Brand -->
-    <a class="navbar-brand mt-4" href="{% url 'index' %}"><img id="ic" src="img/edu_logo_black.png" class="img img-fluid"
-        height="58px" width="108px"></a>
+    <a class="navbar-brand mt-4" href="index.html"><img id="ic" src="img/edu_logo_black.png" class="img img-fluid" height="58px" width="108px"></a>
 
 
 
@@ -71,7 +73,7 @@
           <a class="nav-link" href="#">EduTech Solutions</a>
         </li>
         <li class="nav-item">
-            <a href="#" class="nav-link">Tracks</a>
+            <a href="tracks.html" class="nav-link">Tracks</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">The Process</a>
@@ -79,110 +81,39 @@
       </ul>
       <ul class="navbar-nav">
         <li class="nav-item">
-            <a href="#" class="nav-link">Login</a>
+            <a href="login.html" class="nav-link">Login</a>
           </li>
         <li class="nav-item">
-<button target="_blank" onclick="window.location='#'" type="button" class="nav-link"  id="join-btn">Apply</button>
+        <button target="_blank" onclick="window.location='#'" type="button" class="nav-link"  id="join-btn">Apply</button>
         </li>
       </ul>
     </div>
   </div>
   <!--Where navbar ends-->
 
-            <div class = "row">
-                <div class = "col-8 section-1">
-                    <h1 class = "headliner">Join the best thing to happen to work before graduation</h1>
-                    <div class = "row search-box">
-                        <div class = "col-2">
-                            <span style="color:dimgray;" class="fa fa-search"></span>
-                        </div>
-                        <div class = "col-10">
-                            <input class = "search-bar" type = "search" placeholder="What would you want to learn?"/>
-                        </div>
-                    </div>
+
+
+        <!-- =================== Landing Page ========================= -->
+
+
+    <div class = "row">
+        <div class = "col-8 section-1">
+            <h1 class = "headliner">Join the best thing to happen to work before graduation</h1>
+            <div class = "row search-box">
+                <div class = "col-2">
+                    <span style="color:dimgray;" class="fa fa-search"></span>
+                </div>
+                <div class = "col-10">
+                    <input class = "search-bar" type = "search" placeholder="What would you want to learn?"/>
                 </div>
             </div>
-            </div>
-
-
-    <!--===== Testimonial Section =====-->
-    <section style = "padding:5% 0 5% 0;">
-        <div class = "container">
-        <div class = "row">
-            <div class = "col-12">
-                <h1 class="section-2-head">Candidates ain’t only getting better<br> skills but cannot stop talking about the <br>experience</h1>
-            </div>
-        </div>
-        <div class = "row testimony">
-            <div class = "col-6">
-                <div class = "row">
-                    <div class = "col-2 offset-1" style="text-align:right;">
-                        <img src = "img/test_img.png" class = "test-img">
-                   </div>
-                    <div class = "col-7 offset-1 test-card">
-                        <p>The human community and individual 
-                            people are more likely to hurt or 
-                            undernourish children they think of as 
-                            “bodies” to be used. </p>
-                            <br>
-                            <strong>Victor Kanu</strong>
-                    </div>
-                </div> 
-           </div>
-            <div class = "col-6">
-                <div class = "row">
-                    <div class = "col-2 offset-1" style="text-align:right;">
-                        <img src = "img/test_img.png" class = "test-img">
-                   </div>
-                    <div class = "col-7 offset-1 test-card">
-                        <p>The human community and individual 
-                            people are more likely to hurt or 
-                            undernourish children they think of as 
-                            “bodies” to be used. </p>
-                            <br>
-                            <strong>Wuraola Rita</strong>
-                    </div>
-                </div> 
-            </div>
-        </div> 
-
-    <div class = "row" style = "margin-top:8%;">
-        <div class="col-12">
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0"></li>
-                <li class = "active" data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-              </ol>
         </div>
     </div>
     </div>
-    </section>
-    <!--===== Testimonial Section Ends Here =====-->
-            <script src="js/jquery.js"></script>
-            <script src="js/popper.min.js"></script>
-            <script src="js/bootstrap.min.js"></script>
-            <script src="js/first.js"></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Welcome - Work Simulation Programme </title>
-
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500,700,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-
-    
-    <link rel="stylesheet" href="css/navbar_footer.css">
-    <link rel="stylesheet" href="css/index.css">
-</head>
-<body>
-        <a href="tracks.html">tracks</a>
 
 <br> <br>
+
     <!-- ============= what is WSP section ========================== -->
     <section>
         <div class="container">
@@ -268,6 +199,7 @@
     </section>
 
 
+
     <!-- =================== second sweet word section ==================== -->
 
     <section>
@@ -288,6 +220,9 @@
         </section>
 
 <br> <br> <br>
+
+
+
         <!-- ========third  sweet words section ================== -->
     <section>
         <div class="container-fluid">
@@ -309,120 +244,173 @@
     </section>
 
 
-    <footer class="text-dark">
 
-        <div class="container">
-            <div class="row">
-    
-    
-                <div class="col-lg-3">
-                <h5 class="mb-4"><a href="{% url 'index' %}"><img src="{% static 'img/edu_logo_black.png' %}" alt="" width="50%"></a></h5>
-                
-                <ul class="list-unstyled text-small">
-                    <li>18 Bakare Dawodu Street,</li>
-                    <li>Ifako Gbagada, Lagos.</li>
-                    <li><a class="text-dark" href="#">hello@edubridgeacademy.com</a></li>
-                    <li><a class="text-dark" href="tel: +234 802 809 8270">+234 815 121 3474</a></li>
-                    <li><a class="text-dark" href="tel: +234 802 809 8270">+234 7045707035</a></li>
-                </ul>
-                </div>
-                <div class="col-lg-9">
-                    <div class="row offset-1">
-                    <div class="col-lg-2">
-                        <h5 class="text-success mb-4">Students</h5>
-                        <ul class="list-unstyled text-small">
-                            <!-- <li><a class="text-dark" href="#">Who's hiring</a></li> -->
-                            <!-- <li><a class="text-dark" href="#">Career tips</a></li> -->
-                            <!-- <li><a class="text-dark" href="#">Companies</a></li> -->
-                            <!-- <li><a class="text-dark" href="#">Job roles</a></li> -->
-                            <li><a class="text-dark" href="{% url 'certificate' %}"> Certificate</a></li>
-                        </ul>
-                        </div>
-                        <div class="col-lg-2">
-                        <h5 class="text-success mb-4">Employers</h5>
-                        <ul class="list-unstyled text-small">
-                            <!-- <li><a class="text-dark" href="#">Customers</a></li> -->
-                            <li><a class="text-dark" href="#">Ambassadors</a></li>
-                            <li><a class="text-dark" href="{% url 'hire_a_grad' %}">Hire a grad</a></li>
-                            <!-- <li><a class="text-dark" href="#">Help center</a></li> -->
-                        </ul>
-                        </div>
-                        <div class="col-lg-3">
-                        <h5 class="text-success mb-4">Courses</h5>
-                        <ul class="list-unstyled text-small">
-    
-                            <li><a class="text-dark" href="{% url 'courses' %}">Experienced Hire</a></li>
-                            <li><a class="text-dark" href="{% url 'courses' %}">Graduate program</a></li>
-                            <li><a class="text-dark" href="{% url 'courses' %}">Undergraduate program</a></li>
-                            <li><a class="text-dark" href="{% url 'courses' %}">Power BI</a></li>
-    
-                        </ul>
-                        </div>
-                        <div class="col-lg-2">
-                        <h5 class="text-success mb-4">Universities</h5>
-                        <ul class="list-unstyled text-small">
-                            <li><a class="text-dark" href="#">Ambassadors</a></li>
-                            <!-- <li><a class="text-dark" href="#">Recruitment challenge</a></li> -->
-                            <!-- <li><a class="text-dark" href="#">Resources</a></li> -->
-                            <li><a class="text-dark" href="http://blog.edubridgeacademy.com">Blog</a></li>
-                            <!-- <li><a class="text-dark" href="#">Help center</a></li> -->
-                            </ul>
-                        </div>
-                        <div class="col-lg-3 pr-0">
-                        <h5 class="text-success mb-4">About Us</h5>
-                        <ul class="list-unstyled text-small">
-                            <li><a class="text-dark" href="{% url 'faq' %}">FAQs</a></li>
-                            <li><a class="text-dark" href="{% url 'contact' %}">Contact Us</a></li>
-                            <!-- <li><a class="text-dark" href="#">Press</a></li> -->
-                            <li><a class="text-dark" href="http://blog.edubridgeacademy.com">Blog</a></li>
-                            <!-- <li><a class="text-dark" href="#">Brand guidelines</a></li> -->
-                            </ul>
-                        </div>
+
+ <!--===== Testimonial Section =====-->
+    <section style = "padding:5% 0 5% 0;">
+        <div class = "container">
+        <div class = "row">
+            <div class = "col-12">
+                <h1 class="section-2-head">Candidates ain’t only getting better<br> skills but cannot stop talking about the <br>experience</h1>
+            </div>
+        </div>
+        <div class = "row testimony">
+            <div class = "col-6">
+                <div class = "row">
+                    <div class = "col-2 offset-1" style="text-align:right;">
+                        <img src = "img/test_img.png" class = "test-img">
+                   </div>
+                    <div class = "col-7 offset-1 test-card">
+                        <p>The human community and individual 
+                            people are more likely to hurt or 
+                            undernourish children they think of as 
+                            “bodies” to be used. </p>
+                            <br>
+                            <strong>Victor Kanu</strong>
                     </div>
-    
-                </div>
+                </div> 
+           </div>
+            <div class = "col-6">
+                <div class = "row">
+                    <div class = "col-2 offset-1" style="text-align:right;">
+                        <img src = "img/test_img.png" class = "test-img">
+                   </div>
+                    <div class = "col-7 offset-1 test-card">
+                        <p>The human community and individual 
+                            people are more likely to hurt or 
+                            undernourish children they think of as 
+                            “bodies” to be used. </p>
+                            <br>
+                            <strong>Wuraola Rita</strong>
+                    </div>
+                </div> 
             </div>
-    
-    
-            </div>
-        </div>
-        <br>
-    
-        <div class="container">
-            <hr>
-            <br>
-        </div>
-    
-    
-        <section>
-            <div class="container">
-            <div class="row" style="margin-top: 50px;">
-    
-                <div class="col-lg-8">
-                <p>
-                    Copyright: EduBridge 2016 - 2020. All rights reserved Privacy & Terms
-                </p>
-                </div>
-                <div class="col-lg-2"></div>
-                <div class="col-lg-2">
-                <a href="http://facebook.com/edubridgeacademy" target="blank"><i class="fab fa-facebook text-dark"></i></a>&nbsp;
-                <a href="http://twitter.com/edubridge_ng" target="blank"><i class="fab  fa-twitter text-dark"></i></a>&nbsp;
-                <a href="http://instagram.com/edubridgeacademy" target="blank"><i class="fab fa-instagram text-dark"></i></a>&nbsp;
-                <a href="https://ng.linkedin.com/in/edubridge-academy-89994297" target="blank"><i
-                    class="fab fa-linkedin text-dark"></i></a>
-    
-    
-                </div>
-    
-            </div>
-            </div>
-        </section>
-    
-    
-    </footer>
-    <!-- <img src="img/footer.svg" width="100%" alt=""> -->
-    
+        </div> 
 
+    <div class = "row" style = "margin-top:8%;">
+        <div class="col-12">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0"></li>
+                <li class = "active" data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+        </div>
+    </div>
+    </div>
+    </section>
+    <!--===== Testimonial Section Ends Here =====-->
+
+
+
+
+
+<!-- ====================== footer section ===================== -->
+
+<footer class="text-dark">
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-3">
+            <h5 class="mb-4"><a href="index.html"><img src="img/edu_logo_black.png" alt="" width="50%"></a></h5>
+            
+            <ul class="list-unstyled text-small">
+                <li>18 Bakare Dawodu Street,</li>
+                <li>Ifako Gbagada, Lagos.</li>
+                <li><a class="text-dark" href="#">hello@edubridgeacademy.com</a></li>
+                <li><a class="text-dark" href="tel: +234 802 809 8270">+234 815 121 3474</a></li>
+                <li><a class="text-dark" href="tel: +234 802 809 8270">+234 7045707035</a></li>
+            </ul>
+            </div>
+            <div class="col-lg-9">
+                <div class="row offset-1">
+                <div class="col-lg-2">
+                    <h5 class="text-success mb-4">Students</h5>
+                    <ul class="list-unstyled text-small">
+                        <!-- <li><a class="text-dark" href="#">Who's hiring</a></li> -->
+                        <!-- <li><a class="text-dark" href="#">Career tips</a></li> -->
+                        <!-- <li><a class="text-dark" href="#">Companies</a></li> -->
+                        <!-- <li><a class="text-dark" href="#">Job roles</a></li> -->
+                        <li><a class="text-dark" href="{% url 'certificate' %}"> Certificate</a></li>
+                    </ul>
+                    </div>
+                    <div class="col-lg-2">
+                    <h5 class="text-success mb-4">Employers</h5>
+                    <ul class="list-unstyled text-small">
+                        <!-- <li><a class="text-dark" href="#">Customers</a></li> -->
+                        <li><a class="text-dark" href="#">Ambassadors</a></li>
+                        <li><a class="text-dark" href="{% url 'hire_a_grad' %}">Hire a grad</a></li>
+                        <!-- <li><a class="text-dark" href="#">Help center</a></li> -->
+                    </ul>
+                    </div>
+                    <div class="col-lg-3">
+                    <h5 class="text-success mb-4">Courses</h5>
+                    <ul class="list-unstyled text-small">
+
+                        <li><a class="text-dark" href="{% url 'courses' %}">Experienced Hire</a></li>
+                        <li><a class="text-dark" href="{% url 'courses' %}">Graduate program</a></li>
+                        <li><a class="text-dark" href="{% url 'courses' %}">Undergraduate program</a></li>
+                        <li><a class="text-dark" href="{% url 'courses' %}">Power BI</a></li>
+
+                    </ul>
+                    </div>
+                    <div class="col-lg-2">
+                    <h5 class="text-success mb-4">Universities</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-dark" href="#">Ambassadors</a></li>
+                        <!-- <li><a class="text-dark" href="#">Recruitment challenge</a></li> -->
+                        <!-- <li><a class="text-dark" href="#">Resources</a></li> -->
+                        <li><a class="text-dark" href="http://blog.edubridgeacademy.com">Blog</a></li>
+                        <!-- <li><a class="text-dark" href="#">Help center</a></li> -->
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 pr-0">
+                    <h5 class="text-success mb-4">About Us</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-dark" href="{% url 'faq' %}">FAQs</a></li>
+                        <li><a class="text-dark" href="{% url 'contact' %}">Contact Us</a></li>
+                        <!-- <li><a class="text-dark" href="#">Press</a></li> -->
+                        <li><a class="text-dark" href="http://blog.edubridgeacademy.com">Blog</a></li>
+                        <!-- <li><a class="text-dark" href="#">Brand guidelines</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="container">
+        <hr>
+        <br>
+    </div>
+
+    <section>
+        <div class="container">
+        <div class="row" style="margin-top: 50px;">
+
+            <div class="col-lg-8">
+            <p>
+                Copyright: EduBridge 2016 - 2020. All rights reserved Privacy & Terms
+            </p>
+            </div>
+            <div class="col-lg-2"></div>
+            <div class="col-lg-2">
+            <a href="http://facebook.com/edubridgeacademy" target="blank"><i class="fab fa-facebook text-dark"></i></a>&nbsp;
+            <a href="http://twitter.com/edubridge_ng" target="blank"><i class="fab  fa-twitter text-dark"></i></a>&nbsp;
+            <a href="http://instagram.com/edubridgeacademy" target="blank"><i class="fab fa-instagram text-dark"></i></a>&nbsp;
+            <a href="https://ng.linkedin.com/in/edubridge-academy-89994297" target="blank"><i
+                class="fab fa-linkedin text-dark"></i></a>
+
+            </div>
+
+        </div>
+        </div>
+    </section>
+</footer>
+   
 
     <script src="js/jquery.js"></script>
     <script src="js/popper.min.js"></script>
