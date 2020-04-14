@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+
+
+/* ================== Tracks section =========================== */
+
+.track-button {
+    background-color: #2E673D;
+    color: WHITE;
+    padding: .4rem 1.7rem;
+    font-size: 1.2rem;
+}
+.space {
+    margin-top: 5rem;
+    padding: 2rem;
+}

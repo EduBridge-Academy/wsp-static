@@ -1,0 +1,44 @@
+ /* ======================== general ============================= */
+ body {
+    font-family: 'M PLUS 1p', sans-serif;
+    overflow-x:hidden; 
+    color: black;
+    font-weight: 500;
+    line-height: 2;
+  }
+ .colored-text {
+     color: #2E673D;
+ }
+.round{
+    border-radius: 10px;
+}
+.headers {
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 2.1;
+}
+
+
+ /*  ============= what is WSP section ==========================  */
+
+ .icons-1 {
+    margin-left: 2rem;
+    margin-top: 2rem;
+ }
+
+ /* =============== second sweet word section ==================== */
+ .ssw-m {
+     margin-top: 10rem;
+ }
+ .ssw-mt {
+     margin-top: -16rem;
+ }
+
+ /* ================== third sweetword section ============== */
+ .mybtn {
+     background-color: #7FE59E;
+     color: #2E673D;
+     padding: .4rem 1.2rem;
+     font-size: 1.8rem;
+     border-radius: 10px;
+ }
