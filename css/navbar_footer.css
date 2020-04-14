@@ -1,0 +1,10 @@
+/* ================== footer section ==================== */
+
+footer {
+    background-image: url('/img/footer.png');
+    background-size: 100% 100%;
+    padding-top: 10rem;
+}
+footer a:hover {
+    color: #54ee54 !important;
+  }
