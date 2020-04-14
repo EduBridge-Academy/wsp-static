@@ -1,10 +1,16 @@
 
-    body {
-        font-family: 'M PLUS 1p', sans-serif;
-    }
-    html{
-        scroll-behavior: smooth;
-    }
+body {
+    font-family: 'M PLUS 1p', sans-serif;
+    
+    overflow-x:hidden; 
+    color: black;
+    font-weight: 500;
+    line-height: 2;
+}
+html{
+  scroll-behavior: smooth;
+}
+  
 
     /* ======== Hero Page ================= */
 .main-view {
@@ -32,9 +38,10 @@
   font-size:18px;
 }
 
-/* ================== Hero Page Ends Here =========================== */
+/* ============ Hero Page Ends Here ================== */
 
-    /* ==== Navbar ==== */
+
+    /* ============ Navbar =================== */
     #myNav {
         display: none;
       }
@@ -110,6 +117,7 @@
         text-decoration-line: none;
       }
       /* ==== Navbar Ends Here==== */
+
 
       /* ======== Navbar Mobile View ================= */
       @media screen and (max-width: 812px) {
@@ -209,6 +217,7 @@
     /* ======== Navbar Mobile View Ends Here ================= */
 
 
+
 /* ================== Tracks section =========================== */
 
 .track-button {
@@ -221,6 +230,7 @@
     margin-top: 5rem;
     padding: 2rem;
 }
+
 /* ================== Tracks section ends here =========================== */
 
 /* ================== Testimony section =========================== */
@@ -258,4 +268,16 @@
   top: 0;
   padding-left: 33%;
 }
-/* ================== Testimony section ends here =========================== */
+/* ============== Testimony section ends here ================= */
+
+
+
+
+/* =========================== MEDIA QUERIES ================================ */
+
+@media(max-width: 767px) {
+    .track-button {
+        margin-bottom: 2rem;
+    }
+}
+

@@ -1,44 +1,34 @@
+/* ======================== general ============================= */
 
-    body {
-        font-family: 'M PLUS 1p', sans-serif;
-    }
-    html{
-        scroll-behavior: smooth;
-    }
+body {
+    font-family: 'M PLUS 1p', sans-serif;
+    overflow-x:hidden; 
+    color: black;
+    font-weight: 500;
+    line-height: 2;
+}
+html{
+  scroll-behavior: smooth;
+}
 
-    /* ======== Landing Page ================= */
-    .main-view {
-        background-image: url('../img/bg_hero.png');
-        background-position: top left;
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        height:100vh;
-    }
+/* ======================== general ============================= */
 
-    .section-1{
-        padding:10% 0 0 12%;
-    }
-    .headliner{
-        color:black;
-        font-weight:800;
-        line-height:150%;
-    }
-    .search-box{
-        font-size: 19px;
-        max-width:65%;
-        padding:2% 2% 1.5% 2%;
-        background: #FFFFFF;
-        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-        border-radius: 100px;
-        margin-top:4%;
-        margin-left:0.5%;
-    }
-    .search-bar{
-        width:100%;
-        border:0px;
-    }
+.colored-text {
+  color: #2E673D;
+}
+.round{
+ border-radius: 10px;
+}
+.headers {
+ font-weight: 800;
+ font-size: 2rem;
+ line-height: 2.1;
+}
 
-    /* ==== Navbar ==== */
+
+
+
+/* ================= Navbar =============== */
     #myNav {
         display: none;
       }
@@ -115,10 +105,76 @@
       }
       /* ==== Navbar Ends Here==== */
 
+
+
+/* ======== Landing Page ================= */
+    .main-view {
+        background-image: url('../img/bg_hero.png');
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height:100vh;
+    }
+
+    .section-1{
+        padding:10% 0 0 12%;
+    }
+    .headliner{
+        color:black;
+        font-weight:800;
+        line-height:150%;
+    }
+    .search-box{
+        font-size: 19px;
+        max-width:65%;
+        padding:2% 2% 1.5% 2%;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 100px;
+        margin-top:4%;
+        margin-left:0.5%;
+    }
+    .search-bar{
+        width:100%;
+        border:0px;
+    }
+
       /* ======== Landing Page Ends Here ================= */
+ 
+
+ /*  ============= what is WSP section ==========================  */
+
+ .icons-1 {
+    margin-left: 2rem;
+    margin-top: 2rem;
+ }
 
 
-      /* ======== Testimony Sections ================= */
+
+
+ /* =============== second sweet word section ==================== */
+ .ssw-m {
+     margin-top: 10rem;
+     margin-left: 3rem;
+ }
+ .ssw-mt {
+     margin-top: -16rem;
+ }
+
+
+
+ /* ================== third sweetword section ============== */
+ .mybtn {
+     background-color: #7FE59E;
+     color: #2E673D;
+     padding: .4rem 1.2rem;
+     font-size: 1.8rem;
+     border-radius: 10px;
+ }
+
+
+ 
+ /* ======== Testimony Sections ================= */
       .section-2-head{
           text-align:center;
           font-size:30px;
@@ -172,7 +228,16 @@
     }
       /* ======== Testimony Section Ends Here ================= */
 
-/* ======== Navbar Mobile View ================= */
+
+
+
+
+
+
+ /* ======================== MEDIA QUERIES ====================     */
+
+
+ /* ======== Navbar Mobile View ================= */
       @media screen and (max-width: 812px) {
         #myNav {
           display: block;
@@ -268,49 +333,13 @@
         }
     }
     /* ======== Navbar Mobile View Ends Here ================= */
+ 
+/*    ======================= Mobile View ========================= */
 
- /* ======================== general ============================= */
- body {
-    font-family: 'M PLUS 1p', sans-serif;
-    overflow-x:hidden; 
-    color: black;
-    font-weight: 500;
-    line-height: 2;
-  }
- .colored-text {
-     color: #2E673D;
- }
-.round{
-    border-radius: 10px;
-}
-.headers {
-    font-weight: 800;
-    font-size: 2rem;
-    line-height: 2.1;
+@media(max-width: 767px) {
+.ssw-m, .third-media {
+  margin-top: 5rem;
+  margin-left: unset;
 }
 
-
- /*  ============= what is WSP section ==========================  */
-
- .icons-1 {
-    margin-left: 2rem;
-    margin-top: 2rem;
- }
-
- /* =============== second sweet word section ==================== */
- .ssw-m {
-     margin-top: 10rem;
- }
- .ssw-mt {
-     margin-top: -16rem;
- }
-
- /* ================== third sweetword section ============== */
- .mybtn {
-     background-color: #7FE59E;
-     color: #2E673D;
-     padding: .4rem 1.2rem;
-     font-size: 1.8rem;
-     border-radius: 10px;
- }
-
+}   

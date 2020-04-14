@@ -1,0 +1,31 @@
+body {
+    font-family: 'M PLUS 1p', sans-serif;
+    overflow-x:hidden; 
+    color: black;
+    font-weight: 500;
+}
+
+/* ============ sign in form ==================== */
+
+section {
+  background-image: url('/img/login_signup.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.scnd_form {
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: #4DE897
+  }
+.comp {
+    color: red;
+  }
+.submit-btn {
+    background: #4DE897;
+}
+.field-icon {
+  float: right;
+  margin-top: -50px;
+  position: relative;
+  z-index: 2;
+}
