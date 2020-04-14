@@ -154,6 +154,7 @@ html{
  /* =============== second sweet word section ==================== */
  .ssw-m {
      margin-top: 10rem;
+     margin-left: 3rem;
  }
  .ssw-mt {
      margin-top: -16rem;
@@ -311,16 +312,25 @@ html{
   
     
         
-  @media screen and (max-height: 450px) {
-  .overlay {
-    overflow-y: auto;
-    }
-  .overlay a {
-    font-size: 20px
-    }
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-    }
+@media screen and (max-height: 450px) {
+.overlay {
+  overflow-y: auto;
   }
+.overlay a {
+  font-size: 20px
+  }
+.overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+ 
+
+@media(max-width: 767px) {
+.ssw-m, .third-media {
+  margin-top: 5rem;
+  margin-left: unset;
+}
+
+}   
