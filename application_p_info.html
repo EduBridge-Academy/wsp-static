@@ -2,236 +2,878 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Welcome to Edubridge Academy Work Simulation Program.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta charset="UTF-8">
+   <meta name="description" content="Welcome to Edubridge Academy Work Simulation Program.">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500,700,800,900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+   <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500,700,800,900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="icon" href="img/edu_logo_black.png" type="image/x-icon">
-    
-    <link rel="stylesheet" type="text/css" href="css/navbar_footer.css">
-    <link rel="stylesheet" type="text/css" href="css/applicaton_p_info.css">
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   <link rel="icon" href="img/edu_logo_black.png" type="image/x-icon">
+
+   <link rel="stylesheet" type="text/css" href="css/navbar_footer.css">
+   <link rel="stylesheet" type="text/css" href="css/applicaton_p_info.css">
+   <link href="css/jquery-form-validator.min.css" rel="stylesheet"
+      type="text/css" />
+   <link rel="stylesheet" href="css/bootstrap-datepicker3.standalone.css">
 
 
-    <title>Edubridge Academy</title>
+   <title>Edubridge Academy</title>
 </head>
-<body>  
 
-    <div class = "container-fluid main-view">
+<body>
 
-        <!-- ==== Mobile Nav bar === -->
-        <div class="row" id="mb-nav" style="width:100%; padding-top:38px; padding-left:10px;">
-            <div class="col-12"><a href ="index.html"><img src="img/edu_logo_black.png" class="img" style="height:37px; width:83px;"></a>
-                <a id="toggler" style="font-size:33px; color:black; cursor:pointer;" onclick="openNav()">&#9776;</a>
+   <div class="container-fluid main-view">
+
+      <!-- ==== Mobile Nav bar === -->
+      <div class="row" id="mb-nav" style="width:100%; padding-top:38px; padding-left:10px;">
+         <div class="col-12"><a href="index.html"><img src="img/edu_logo_black.png" class="img"
+                  style="height:37px; width:83px;"></a>
+            <a id="toggler" style="font-size:33px; color:black; cursor:pointer;" onclick="openNav()">&#9776;</a>
+         </div>
+      </div>
+      <div id="myNav" class="overlay">
+         <div class="row" style="padding-top:38px;">
+            <div class="col-3"><a href="index.html"><img src="img/edu_logo_black.png" class="img"
+                     style="height:40px; width:86px;"></a></div>
+
+            <div class="col-6"></div>
+
+            <div class="col-3"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             </div>
-        </div>
-            <div id="myNav" class="overlay">
-            <div class="row" style="padding-top:38px;">
-                <div class="col-3"><a href ="index.html"><img src="img/edu_logo_black.png" class="img" style="height:40px; width:86px;"></a></div>
-        
-                <div class="col-6"></div>
-        
-                <div class="col-3"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                </div>
+         </div>
+
+         <div class="row overlay-content">
+            <div class="col-12">
+               <a href="https://blog.edubridgeacademy.com/">Blog</a>
+               <a href="#">EduTech Solutions</a>
+               <a href="tracks.html">Tracks</a>
+               <a href="#">The Process</a>
             </div>
-        
-            <div class="row overlay-content">
-                <div class="col-12">
-                <a href="https://blog.edubridgeacademy.com/">Blog</a>
-                <a href="#">EduTech Solutions</a>
-                <a href="tracks.html">Tracks</a>
-                <a href="#">The Process</a>
-                </div>
-                <div class="col-12" style="margin-top:20px; text-decoration: underline;">
-                <a href="login.html">Login</a>
-        
-                </div>
-                <div class="col-12" style="margin-left:5%; margin-top:40px;">
-                
-                <button  onclick="window.location='application_p_info.html';" type="button" class="nav-link"  id="join-btn">Apply</button>
-                </div>
+            <div class="col-12" style="margin-top:20px; text-decoration: underline;">
+               <a href="login.html">Login</a>
+
             </div>
-    </div>
-            <!-- Mobile navbar edns here -->
-        
-            <div class="row navbar navbar-dark navbar-expand-xl nav_" >
-            <!-- Brand -->
-            <a class="navbar-brand mt-4" href="index.html"><img id="ic" src="img/edu_logo_black.png" class="img img-fluid" height="58px" width="108px"></a>
-        
-        
-        
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse mt-4" id="myNavbar">
-                <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="http://blog.edubridgeacademy.com/">Blog</a>
-        
-        
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">EduTech Solutions</a>
-                </li>
-                <li class="nav-item">
-                    <a href="tracks.html" class="nav-link">Tracks</a>
-                    </li>
-                    <li class="nav-item">
-                    <a href="#" class="nav-link">The Process</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="login.html" class="nav-link">Login</a>
-                    </li>
-                <li class="nav-item">
-                <button target="_blank" onclick="window.location='application_p_info.html'" type="button" class="nav-link"  id="join-btn">Apply</button>
-                </li>
-                </ul>
+            <div class="col-12" style="margin-left:5%; margin-top:40px;">
+
+               <button onclick="window.location='application_p_info.html';" type="button" class="nav-link"
+                  id="join-btn">Apply</button>
             </div>
-            </div>
-            <!--Where navbar ends-->
-        </div> <!-- container-fluid ends -->
+         </div>
+      </div>
+      <!-- Mobile navbar edns here -->
+
+      <div class="row navbar navbar-dark navbar-expand-xl nav_">
+         <!-- Brand -->
+         <a class="navbar-brand mt-4" href="index.html"><img id="ic" src="img/edu_logo_black.png" class="img img-fluid"
+               height="58px" width="108px"></a>
 
 
 
-    <section>
-        <br>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <p>Hello Modupeoluwa Rita,</p>
-                    <h4>Application Process</h4>
-                </div>
-                <div class="col-lg-8">
-                    <ul class="nav nav-tabs bg-white round">
-                        <li class="nav-item navitem">
-                            <a class="nav-link active" href="#">Personal Information</a>
-                        </li>
-                        <li class="nav-item navitem">
-                            <a class="nav-link disabled" href="#">Assessment Test</a>
-                        </li>
-                        <li class="nav-item navitem">
-                            <a class="nav-link disabled" href="#">Video Interview</a>
-                        </li>
-                        <li class="nav-item navitem">
-                            <a class="nav-link disabled" href="#">Resources</a>
-                        </li>
-                    </ul>
-                </div>
+         <!-- Navbar links -->
+         <div class="collapse navbar-collapse mt-4" id="myNavbar">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="http://blog.edubridgeacademy.com/">Blog</a>
+
+
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">EduTech Solutions</a>
+               </li>
+               <li class="nav-item">
+                  <a href="tracks.html" class="nav-link">Tracks</a>
+               </li>
+               <li class="nav-item">
+                  <a href="#" class="nav-link">The Process</a>
+               </li>
+            </ul>
+            <ul class="navbar-nav">
+               <li class="nav-item">
+                  <a href="login.html" class="nav-link">Login</a>
+               </li>
+               <li class="nav-item">
+                  <button target="_blank" onclick="window.location='application_p_info.html'" type="button"
+                     class="nav-link" id="join-btn">Apply</button>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <!--Where navbar ends-->
+   </div> <!-- container-fluid ends -->
+
+
+
+   <section>
+      <br>
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-3">
+               <p>Hello Modupeoluwa Rita,</p>
+               <h4>Application Process</h4>
             </div>
-           
-            <br> 
+            <div class="col-lg-8">
+               <ul class="nav nav-tabs bg-white round">
+                  <li class="nav-item navitem">
+                     <a class="nav-link active" href="#">Personal Information</a>
+                  </li>
+                  <li class="nav-item navitem">
+                     <a class="nav-link disabled" href="#">Assessment Test</a>
+                  </li>
+                  <li class="nav-item navitem">
+                     <a class="nav-link disabled" href="#">Video Interview</a>
+                  </li>
+                  <li class="nav-item navitem">
+                     <a class="nav-link disabled" href="#">Resources</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+
+         <br>
 
 
-            <div class="row">
+         <div class="row">
             <div class="col-lg-12 ">
-                <ul class="nav nav-pills mb-3 offset-1 tracks-top" id="pills-tab" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link tracks-header active" id="pills-home-tab" data-toggle="pill" href="#resume"
-                        role="tab" aria-controls="resume" aria-selected="true">Resume</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link tracks-header" id="personal_info-tab" data-toggle="pill" href="#personal_info" role="tab"
-                        aria-controls="personal_info" aria-selected="false">Personal Information</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link tracks-header" id="pills-contact-tab" data-toggle="pill" href="#education"
-                        role="tab" aria-controls="education" aria-selected="false">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link tracks-header" id="pills-skillsandothers-tab" data-toggle="pill" href="#pills-skillsandothers" role="tab" aria-controls="pills-skillsandothers" aria-selected="true">Skills & Others</a>
-                    </li>
-                </ul>
-    
-                <form action="" method="POST" enctype="multipart/form-data">
+               <ul class="nav nav-pills mb-3 offset-1 tracks-top" id="pills-tab" role="tablist">
+                  <li class="nav-item">
+                     <a class="nav-link tracks-header active first" id="pills-home-tab" data-toggle="pill"
+                        href="#resume" role="tab" aria-controls="resume" aria-selected="false">Resume</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link tracks-header second disabled" id="personal_info-tab" data-toggle="pill"
+                        href="#personal_info" role="tab" aria-controls="personal_info" aria-selected="true">Personal
+                        Information</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link tracks-header third disabled" id="pills-contact-tab" data-toggle="pill"
+                        href="#education" role="tab" aria-controls="education" aria-selected="false">Education</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link tracks-header fourth disabled" id="pills-skillsandothers-tab" data-toggle="pill"
+                        href="#skillsandothers" role="tab" aria-controls="pills-skillsandothers"
+                        aria-selected="true">Skills & Others</a>
+                  </li>
+               </ul>
 
-                <div class="tab-content" id="pills-tabContent">
-    
-                
-                <div class="tab-pane fade show active" id="resume" role="tabpanel" aria-labelledby="pills-home-tab">
-                    
+               <form id="form" class="form" action="https://google.com" method="GET" enctype="multipart/form-data">
 
-                    <div style="width: 90%" class="bg-white round shadow-lg mx-auto">
+                  <div class="tab-content" id="pills-tabContent">
+
+
+                     <div class="tab-pane fade show active" id="resume" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+
+
+                        <div style="width: 90%" class="bg-white round shadow-lg mx-auto">
+                           <br> <br>
+
+                           <img src="img/resume.png" class="d-block mx-auto" width="10%" alt="">
+
+                           <br>
+                           <center>
+                              <h4 class="font-weight-bolder">Upload your resume</h4>
+                              <p>It will be very helpful if the information in your profile correlates with
+                                 your resume
+                              </p>
+                              <br>
+
+                              <div class="box">
+                                 <input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1"
+                                    data-validation="size" data-validation-max-size="2M" />
+                                 <label for="file-1"> <span>CLICK TO UPLOAD CV</span>
+                                 </label>
+                              </div>
+
+                           </center>
+
+                           <div class="text-right mr-5">
+                              <br> <br>
+                              <button type="button" id="next" class="btn pr-5 pl-5 font-weight-bold submit-btn">
+                                 CONTINUE
+                              </button>
+
+                           </div>
+
+                           <br> <br>
+                        </div>
+
+                     </div>
+
+
+
+                     <div class="tab-pane fade " id="personal_info" role="tabpanel" aria-labelledby="personal_info-tab">
                         <br> <br>
-                    
-                        <img  src="img/resume.png" class="d-block mx-auto" width="10%" alt="">
+
+                        <div style="width: 95%" class="bg-white round shadow-lg mx-auto pl-4 pr-4">
+                           <br>
+                           <h5 class="text-left pl-2 font-weight-bolder">PERSONAL INFORMATION</h5>
+
+
+                           <img id="blah" class="d-block mx-auto" width="10%" src="img/resume.png" alt="your image" />
+
+                           <center>
+                              <label for="profile-pic" class="mt-4 font-weight-bolder pic-label">Upload your
+                                 picture</label>
+                           </center>
+                           <br>
+                           <input id="profile-pic" type='file' onchange="readURL(this);" />
+
+                           <br>
+                           <!-- <form id="my-form" action="" method="POST" > -->
+                           <div class="row">
+                              <div class="col-lg-3">
+                                 <div class="form-group">
+                                    <h5 class="mb-3">Full Name</h5>
+                                    <p class="small">This should be your legal name</p>
+                                 </div>
+                              </div>
+
+                              <div class="col-lg-3">
+                                 <div class="form-group">
+                                    <label for="first_name"><span class="comp">* </span>First name</label>
+                                    <input type="text" class="form-control scnd_form" name="first_name"
+                                       data-validation="required">
+                                 </div>
+                              </div>
+
+                              <div class="col-lg-3">
+                                 <div class="form-group">
+                                    <label for="other_name">Other name</label>
+                                    <input type="text" class="form-control scnd_form" name="other_name">
+                                 </div>
+                              </div>
+
+                              <div class="col-lg-3">
+                                 <div class="form-group">
+                                    <label for="last_name"><span class="comp">* </span>Last name</label>
+                                    <input type="text" class="form-control scnd_form" name="last_name"
+                                       data-validation="required">
+                                 </div>
+                              </div>
+                           </div>
+                           <br> <br>
+
+                           <div class="row">
+                              <div class="col-lg-3">
+                                 <div class="form-group">
+                                    <h5>Contact Details</h5>
+                                 </div>
+                              </div>
+
+                              <div class="col-lg-9">
+                                 <div class="row">
+                                    <div class="col-lg-4">
+                                       <div class="form-group">
+                                          <label for="email"><span class="comp">* </span>Email
+                                             address</label>
+                                          <input type="email" name="email" class="form-control scnd_form"
+                                             data-validation="email">
+                                       </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                       <div class="form-group">
+                                          <label for="phone"><span class="comp">* </span>Phone
+                                             number</label>
+                                          <input type="tel" name="phone" class="form-control scnd_form"
+                                             data-validation="required">
+                                       </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                       <div class="form-group">
+                                          <label for="profile-link">LinkedIn profile link</label>
+                                          <input type="link" name="profile-link" class="form-control scnd_form">
+                                       </div>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                       <div class="form-group">
+                                          <label for="address">House address</label>
+                                          <input type="text" name="address" class="form-control scnd_form">
+                                       </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                       <div class="form-group">
+                                          <label for="state"><span class="comp">* </span>State of
+                                             residence</label>
+                                          <input type="text" name="state" class="form-control scnd_form"
+                                             data-validation="required">
+                                       </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                       <div class="form-group">
+                                          <label for="lga">LGA of residence</label>
+                                          <input type="text" name="lga" class="form-control scnd_form">
+                                       </div>
+                                    </div>
+
+                                 </div>
+                              </div>
+                           </div>
+
+
+                           <br> <br>
+                           <div class="row">
+                              <div class="col-lg-3">
+                                 <div class="form-group">
+                                    <h5>Legal Identity</h5>
+                                 </div>
+                              </div>
+
+                              <div class="col-lg-9">
+                                 <div class="row">
+                                    <div class="col-lg-4">
+                                       <div class="form-group">
+                                          <label for="gender"><span class="comp">* </span>Gender</label>
+                                          <select name="gender" class="form-control scnd_form">
+                                             <option value="select a gender">Select a gender</option>
+                                             <option value="Male">Male</option>
+                                             <option value="Female">Female</option>
+                                             <option value="Prefer not to say">Prefer not to say</option>
+                                          </select>
+                                       </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                       <div class="form-group">
+                                          <label for="date"><span class="comp">* </span>Your
+                                             birthday</label>
+                                          <input class="form-control scnd_form" data-provide="datepicker"
+                                             placeholder="dd/mm/yyyy">
+                                       </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                       <div class="form-group">
+                                          <label for="nationality"><span class="comp">*
+                                             </span>Nationality</label>
+                                          <input type="text" name="nationality" class="form-control scnd_form"
+                                             data-validation="required">
+                                       </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                       <div class="form-group">
+                                          <label for="origin">State of origin</label>
+                                          <input type="text" name="origin" class="form-control scnd_form" required>
+                                       </div>
+                                    </div>
+
+                                 </div>
+
+                                 <div class="text-right mr-3">
+                                    <br> <br>
+                                    <button type="button" id="prev"
+                                       class="btn pr-5 pl-5 mt-3 font-weight-bold bg-secondary text-white">
+                                       PREVIOUS
+                                    </button>
+
+                                    <button type="button" id="next2"
+                                       class="btn pr-5 pl-5 mt-3 font-weight-bold submit-btn">
+                                       CONTINUE
+                                    </button>
+                                 </div>
+
+                                 <br> <br>
+                              </div>
+                           </div>
+
+                        </div>
+                     </div>
+
+                     <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
+                        <br> <br>
+
+                        <div style="width: 95%" class="bg-white round shadow-lg mx-auto pl-4 pr-4">
+                           <br>
+                           <h5 class="text-left pl-2 font-weight-bolder">EDUCATION</h5>
+
+                           <br>
+                           <!-- <form id="my-form" action="" method="POST" > -->
+                           <div class="row">
+                              <div class="col-lg-3">
+                                 <div class="form-group">
+                                    <h5 class="">Institution</h5>
+
+                                 </div>
+                              </div>
+
+                              <div class="col-lg-9">
+                                 <div class="form-group">
+                                    <label for="inst_name"><span class="comp">* </span>Institution's name</label>
+                                    <input type="text" class="form-control scnd_form" name="inst_name"
+                                       data-validation="required">
+                                 </div>
+                              </div>
+
+
+                           </div>
+                           <br> <br>
+
+                           <div class="row">
+                              <div class="col-lg-3">
+                                 <div class="form-group">
+                                    <h5>Duration</h5>
+                                 </div>
+                              </div>
+
+                              <div class="col-lg-9">
+                                 <div class="row">
+                                    <div class="col-lg-4">
+                                       <div class="form-group">
+                                          <label for="adm_year"><span class="comp">* </span>Admission year</label>
+                                          <input name="adm_year" class="form-control scnd_form"
+                                             data-validation="required" data-provide="datepicker"
+                                             placeholder="dd/mm/yyyy">
+                                       </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                       <div class="form-group">
+                                          <label for="grad_year"><span class="comp">* </span>Graduation year</label>
+                                          <input  name="grad_year" class="form-control scnd_form"
+                                             data-validation="required" data-provide="datepicker"
+                                             placeholder="dd/mm/yyyy">
+                                       </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+
+                                    </div>
+
+                                 </div>
+                              </div>
+                           </div>
+
+
+                           <br> <br>
+                           <div class="row">
+                              <div class="col-lg-3">
+                                 <div class="form-group">
+                                    <h5>Academic Standing</h5>
+                                 </div>
+                              </div>
+
+                              <div class="col-lg-9">
+                                 <div class="row">
+                                    <div class="col-lg-4">
+                                       <div class="form-group">
+                                          <label for="gender"><span class="comp">* </span>Degree type</label>
+                                          <select name="gender" class="form-control scnd_form" data-validation="required">
+                                             <option value="select a gender">Select a degree</option>
+                                             <option value="undergraduate">Undergraduate</option>
+                                             <option value="Female">Graduate</option>
+                                             <option value="Prefer not to say">Post Graduate</option>
+                                          </select>
+                                       </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                       <div class="form-group">
+                                          <label for="nationality"><span class="comp">*
+                                             </span>Course or Specialization</label>
+                                          <input type="text" name="specialization" class="form-control scnd_form" data-validation="required">
+                                       </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                       <div class="form-group">
+                                          <label for="origin">Qualification</label>
+                                          <input type="text" name="origin" class="form-control scnd_form" placeholder="MA, MSc, BA, HND, etc">
+                                       </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                       <div class="form-group">
+                                          <label for="grade">Grade</label>
+                                          <select name="grade" class="form-control scnd_form">
+                                             <option value="select a gender">Select a grade</option>
+                                             <option value="firstclass">First Class</option>
+                                             <option value="second_class_upper">Second Class Upper</option>
+                                             <option value="second_class_lower">Second Class Lower</option>
+                                             <option value="third_class">Third Class</option>
+                                          </select>
+                                       </div>
+                                    </div>   
+
+
+                                 </div>
+
+                                 
+
+                                 <div class="text-right mr-3">
+                                    <br> <br>
+                                    <button type="button" id="add-edu"
+                                       class="btn pr-5 pl-5 mt-3 font-weight-bold submit-btn text-white">
+                                       ADD NEW EDUCATION
+                                    </button>
+                                    
+                                    
+                                    <button type="button"
+                                       class="btn pr-5 pl-5 mt-3 font-weight-bold bg-secondary text-white prev2">
+                                       PREVIOUS
+                                    </button>
+
+                                    <button type="button"
+                                       class="btn pr-5 pl-5 mt-3 font-weight-bold submit-btn next3">
+                                       CONTINUE
+                                    </button>
+                                 </div>
+
+                                 <br> <br>
+                              </div>
+                           </div>
+
+
+
+                       <div id="edu-form2" class="d-none">
+                           <br>
+                           <h5 class="text-left pl-2 font-weight-bolder">ADDITIONAL EDUCATION</h5>
+
+                           <br>
+                           <!-- <form id="my-form" action="" method="POST" > -->
+                           <div class="row">
+                              <div class="col-lg-3">
+                                 <div class="form-group">
+                                    <h5 class="">Institution</h5>
+
+                                 </div>
+                              </div>
+
+                              <div class="col-lg-9">
+                                 <div class="form-group">
+                                    <label for="inst_name">Institution's name</label>
+                                    <input type="text" class="form-control scnd_form" name="inst_name" >
+                                 </div>
+                              </div>
+
+
+                           </div>
+                           <br> <br>
+
+                           <div class="row">
+                              <div class="col-lg-3">
+                                 <div class="form-group">
+                                    <h5>Duration</h5>
+                                 </div>
+                              </div>
+
+                              <div class="col-lg-9">
+                                 <div class="row">
+                                    <div class="col-lg-4">
+                                       <div class="form-group">
+                                          <label for="adm_year">Admission year</label>
+                                          <input name="adm_year" type="date" class="form-control scnd_form">
+                                       </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                       <div class="form-group">
+                                          <label for="grad_year">Graduation year</label>
+                                          <input  name="grad_year" class="form-control scnd_form"
+                                            type="date">
+                                       </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+
+                                    </div>
+
+                                 </div>
+                              </div>
+                           </div>
+
+
+                           <br> <br>
+                           <div class="row">
+                              <div class="col-lg-3">
+                                 <div class="form-group">
+                                    <h5>Academic Standing</h5>
+                                 </div>
+                              </div>
+
+                              <div class="col-lg-9">
+                                 <div class="row">
+                                    <div class="col-lg-4">
+                                       <div class="form-group">
+                                          <label for="degree_type">Degree type</label>
+                                          <select name="degree_type" class="form-control scnd_form">
+                                             <option value="select a gender">Select a degree</option>
+                                             <option value="undergraduate">Undergraduate</option>
+                                             <option value="Female">Graduate</option>
+                                             <option value="Prefer not to say">Post Graduate</option>
+                                          </select>
+                                       </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                       <div class="form-group">
+                                          <label for="nationality">Course or Specialization</label>
+                                          <input type="text" name="specialization" class="form-control scnd_form">
+                                       </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                       <div class="form-group">
+                                          <label for="origin">Qualification</label>
+                                          <input type="text" name="origin" class="form-control scnd_form" placeholder="MA, MSc, BA, HND, etc">
+                                       </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                       <div class="form-group">
+                                          <label for="grade">Grade</label>
+                                          <select name="grade" class="form-control scnd_form">
+                                             <option value="select a grade">Select a grade</option>
+                                             <option value="firstclass">First Class</option>
+                                             <option value="second_class_upper">Second Class Upper</option>
+                                             <option value="second_class_lower">Second Class Lower</option>
+                                             <option value="third_class">Third Class</option>
+                                          </select>
+                                       </div>
+                                    </div>   
+
+
+                                 </div>
+
+                                 
+
+                                 <div class="text-right mr-3">
+                                    <br> <br>
+                                    <button type="button" id="delete-edu"
+                                       class="btn pr-5 pl-5 mt-3 font-weight-bold submit-btn text-white">
+                                       DELETE EDUCATION
+                                    </button>
+                                    
+                                    
+                                    <button type="button"
+                                       class="btn pr-5 pl-5 mt-3 font-weight-bold bg-secondary text-white prev2">
+                                       PREVIOUS
+                                    </button>
+
+                                    <button type="button"
+                                       class="btn pr-5 pl-5 mt-3 font-weight-bold submit-btn next3">
+                                       CONTINUE
+                                    </button>
+                                 </div>
+
+                                 <br> <br>
+                              </div>
+                           </div>
+                       </div>    
+
+
+
+                        </div>
+                     </div>
+
+
+
+                     <div class="tab-pane fade " id="skillsandothers" role="tabpanel"
+                        aria-labelledby="pills-skillsandothers-tab">
+                        <br> <br>
+
+                        <div style="width: 95%" class="bg-white round shadow-lg mx-auto pl-4 pr-4">
+                              <br>
+                              <h5 class="text-left pl-2 font-weight-bolder">OTHER QUALIFICATIONS</h5>
+   
+                              <br>
+                              <!-- <form id="my-form" action="" method="POST" > -->
+                              <div class="row">
+                                 <div class="col-lg-3">
+                                    <div class="form-group">
+                                       <h5>Skills</h5>
+   
+                                    </div>
+                                 </div>
+   
+                                 <div class="col-lg-6">
+                                    <div class="form-group">
+                                       <label for="inst_name"><span class="comp">* </span>Enter your skills here</label>
+                                       <input type="text" class="form-control scnd_form" name="inst_name" placeholder="E.g. Team work, Excel, Communication"
+                                          data-validation="required">
+                                    </div>
+                                 </div>
+                              </div>
+                              
+                              <br> <br>
+                              <div class="row">
+                                 <div class="col-lg-3">
+                                    <div class="form-group">
+                                       <h5 >Certifications</h5>
+                                    </div>
+                                 </div>
+   
+                                 <div class="col-lg-9">
+                                    <div class="row">
+                     
+                                       <div class="col-lg-4">
+                                          <div class="form-group">
+                                             <label for="body"><span class="comp">*
+                                                </span>Body</label>
+                                             <input type="text" name="body" class="form-control scnd_form" data-validation="required">
+                                          </div>
+                                       </div>
+   
+                                       <div class="col-lg-4">
+                                          <div class="form-group">
+                                             <label for="qualification"><span class="comp">*
+                                             </span>Qualification</label>
+                                             <input type="text" name="qualification" class="form-control scnd_form" >
+                                          </div>
+                                       </div>
+
+                                       <div class="col-lg-4">
+                                       </div>
+
+                                    </div>
+   
+                                    
+   
+                                    <div class="text-right mr-3">
+                                       <br> <br>
+                                       <button type="button" id="add-cert"
+                                          class="btn pr-5 pl-5 mt-3 font-weight-bold submit-btn text-white">
+                                          ADD NEW CERTIFICATION
+                                       </button>
+                                       
+                                       
+                                       <button type="button"
+                                          class="btn pr-5 pl-5 mt-3 font-weight-bold bg-secondary text-white prev3">
+                                          PREVIOUS
+                                       </button>
+   
+                                       <button type="submit"
+                                          class="btn pr-5 pl-5 mt-3 font-weight-bold submit-btn submit">
+                                          SUBMIT
+                                       </button>
+                                    </div>
+
+                                    
+   
+                                    <br> <br>
+                                 </div>
+                              </div>
+   
+   
+   
+                          <div id="cert-form2" class="d-none">
+                              <br>
+                              <h5 class="text-left pl-2 font-weight-bolder">ADDITIONAL CERTIFICATION</h5>
+   
+                              <br>
+                              <!-- <form id="my-form" action="" method="POST" > -->
+                                 <br> <br>
+                                 <div class="row">
+                                    <div class="col-lg-3">
+                                       <div class="form-group">
+                                          <h5 >Certifications</h5>
+                                       </div>
+                                    </div>
+      
+                                    <div class="col-lg-9">
+                                       <div class="row">
                         
-                        <br> 
-                        <center>
-                            <h4 class="font-weight-bolder">Upload your resume</h4>
-                            <p >It will be very helpful if the information in your profile correlates with your resume 
-                            </p>
-                            <br>
-                
-                        <div class="box">
-                            <input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1" data-multiple-caption="{count} files selected" multiple />
-                            <label for="file-1"> <span>CLICK TO UPLOAD CV</span>
-                                </label>
-                        </div>
+                                          <div class="col-lg-4">
+                                             <div class="form-group">
+                                                <label for="body">Body</label>
+                                                <input type="text" name="body" class="form-control scnd_form" >
+                                             </div>
+                                          </div>
+      
+                                          <div class="col-lg-4">
+                                             <div class="form-group">
+                                                <label for="qualification">Qualification</label>
+                                                <input type="text" name="qualification" class="form-control scnd_form" >
+                                             </div>
+                                          </div>
+   
+                                          <div class="col-lg-4">
+                                          </div>
+   
+                                       </div>
 
-                        </center>
+                                       <div class="text-right mr-3">
+                                          <br> <br>
+                                          <button type="button" id="delete-cert"
+                                             class="btn pr-5 pl-5 mt-3 font-weight-bold submit-btn text-white">
+                                             DELETE CERTIFICATION
+                                          </button>
+                                          
+                                          
+                                          <button type="button"
+                                             class="btn pr-5 pl-5 mt-3 font-weight-bold bg-secondary text-white prev3">
+                                             PREVIOUS
+                                          </button>
+      
+                                          <button type="submit"
+                                             class="btn pr-5 pl-5 mt-3 font-weight-bold submit-btn submit">
+                                             SUBMIT
+                                          </button>
+                                       </div>
+   
+                                       <br> <br>
+   
+                           </div>
 
-                            <br> <br> <br> <br>
-                        </div>
+                     </div>
 
-                    </div>
+                  </div>
 
-                    
-
-
-
-                <!-- </div> -->
-    
-    
-    
-                <div class="tab-pane fade" id="personal_info" role="tabpanel" aria-labelledby="personal_info-tab">
-                    <br> <br>
-
-
-                    <h2>personal_info</h2>
-
-                </div>
-    
-                <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
-                    <br> <br>
-
-                <h2>education</h2>
-
-
-                </div>
-    
-    
-    
-                <div class="tab-pane fade " id="pills-skillsandothers" role="tabpanel" aria-labelledby="pills-skillsandothers-tab">
-                            <br> <br>
-
-                            <h2>skills and others</h2>
-
-                </div>
-
-
-                </div>
-
-            </form>
+               </form>
             </div>
-        </div>
+         </div>
 
-        <br> <br> <br> <br> 
+         <br> <br> <br> <br>
 
-    </section>
-
-    <!-- <br> <br> <br> <br> -->
+   </section>
 
 
 
-    <script src="js/jquery.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/first.js"></script>
-    <script src="js/application.js"></script>
+
+
+   <script src="js/jquery.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/first.js"></script>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+   <script src="js/application_p_info.js"></script>
+   <script src="js/see.js"></script>
+   <script>
+      $.validate({
+         modules: 'file, date'
+      });
+   </script>
+   <script src="js/bootstrap-datepicker.min.js"></script>
+   <script>
+      $('.datepicker').datepicker({
+         format: 'dd/mm/yyyy',
+         startDate: '-3d'
+      });
+   </script>
 
 </body>
+
 </html>

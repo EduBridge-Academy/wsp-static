@@ -4,13 +4,23 @@ body {
     color: black;
     font-weight: 500;
 }
-
-/* ============ sign in form ==================== */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -o-box-shadow: none !important;
+  -ms-box-shadow: none !important;
+}
+/* ============  forms ==================== */
 
 section {
   background-image: url('/img/login_signup.png');
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center center;
 }
 .scnd_form {
     outline: 0;
@@ -28,4 +38,14 @@ section {
   margin-top: -50px;
   position: relative;
   z-index: 2;
+}
+
+
+/*================== MEDIA QUERIES =================*/
+/* login, signup */
+
+@media(max-width: 767px) {
+  section {
+    background-image: unset;
+  }
 }

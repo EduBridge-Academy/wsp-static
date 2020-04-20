@@ -12,12 +12,25 @@ html{
 section {
     background:  #f4ffff;
 }
-  
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -o-box-shadow: none !important;
+  -ms-box-shadow: none !important; 
+}
+label {
+  font-size: 0.9rem;
+}
+
+
+
 /* ==================== application nav section ========================== */
-.faq-section {
-    margin-top:8rem;
-  }
-  
+
   .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     color: #000000;
     background-color: #f4ffff;
@@ -46,8 +59,9 @@ section {
     padding: 1rem;
   }
 
-  /* resume */
-  .inputfile {
+  /* === resume  =====*/
+
+  .inputfile, #profile-pic  {
 	width: 0.1px;
 	height: 0.1px;
 	opacity: 0;
@@ -74,7 +88,33 @@ section {
 .inputfile + label * {
 	pointer-events: none;
 }
-  /* personal information */
+
+  /* == personal information === */
+
+.pic-label {
+   color: black;
+   background-color:  #4DE897;
+   cursor: pointer; 
+   padding: .25rem 1rem;
+}
+.scnd_form {
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: #4DE897
+  }
+.comp {
+    color: red;
+  }
+.submit-btn {
+    background: #4DE897;
+}
+img#blah{
+   max-height: 7rem;
+   border-radius: 50%;
+   width:10%;
+ }
+ 
+
 
   /* education */
 
@@ -93,9 +133,11 @@ section {
     margin-left: 10%;
   }
   
-  .faq-section {
-    margin-top:3rem;
-  }
+/* personal info */
+img#blah{
+   max-height: 3rem;
+   width: 15%;
+}
 
   /* overide navbar_footer.css */
 #mb-nav {
