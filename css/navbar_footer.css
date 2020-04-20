@@ -79,7 +79,7 @@ text-decoration-line: none;
 /* ================== footer section ==================== */
 
 footer {
-    background-image: url('../img/footer.png');
+    background: url('img/footer.png');
     background-size: 100% 100%;
     padding-top: 10rem;
 }
