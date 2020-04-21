@@ -27,7 +27,7 @@ html{
 .headliner{
     color:#2E673D;
     font-weight:900;
-    font-size:65px;
+    font-size:60px;
     text-align:center;
 }
 
@@ -56,6 +56,10 @@ html{
     padding: 2rem;
 }
 
+.tracks-images{
+  max-width:200px;
+  max-height:200px;
+}
 /* ================== Tracks section ends here =========================== */
 
 
