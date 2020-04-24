@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Welcome to Edubridge Academy Work Simulation Program.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    
+        <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+     <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500,700,800,900&display=swap" rel="stylesheet">
+  
+     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+     <link rel="icon" href="img/edu_logo_black.png" type="image/x-icon">
+  
+     <link rel="stylesheet" type="text/css" href="css/navbar_footer.css">
+     <link rel="stylesheet" type="text/css" href="css/applicaton_p_info.css">
+     <link href="css/jquery-form-validator.min.css" rel="stylesheet"
+        type="text/css" />
+        <link rel="stylesheet" type="text/css" href="css/start_test.css">
+        
+
+        <title>Edubridge Academy</title>
+    </head>
+    <body> 
+        <div class="container-fluid main-view">
+
+            <!-- ==== Mobile Nav bar === -->
+            <div class="row" id="mb-nav" style="width:100%; padding-top:38px; padding-left:10px;">
+               <div class="col-12"><a href="index.html"><img src="img/edu_logo_black.png" class="img"
+                        style="height:37px; width:83px;"></a>
+                  <a id="toggler" style="font-size:33px; color:black; cursor:pointer;" onclick="openNav()">&#9776;</a>
+               </div>
+            </div>
+            <div id="myNav" class="overlay">
+               <div class="row" style="padding-top:38px;">
+                  <div class="col-3"><a href="index.html"><img src="img/edu_logo_black.png" class="img"
+                           style="height:40px; width:86px;"></a></div>
+      
+                  <div class="col-6"></div>
+      
+                  <div class="col-3"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  </div>
+               </div>
+      
+               <div class="row overlay-content">
+                  <div class="col-12">
+                     <a href="https://blog.edubridgeacademy.com/">Blog</a>
+                     <a href="#">EduTech Solutions</a>
+                     <a href="tracks.html">Tracks</a>
+                     <a href="#">The Process</a>
+                  </div>
+                  <div class="col-12" style="margin-top:20px; text-decoration: underline;">
+                     <a href="login.html">Login</a>
+      
+                  </div>
+                  <div class="col-12" style="margin-left:5%; margin-top:40px;">
+      
+                     <button onclick="window.location='application_p_info.html';" type="button" class="nav-link"
+                        id="join-btn">Apply</button>
+                  </div>
+               </div>
+            </div>
+            <!-- Mobile navbar edns here -->
+      
+            <div class="row navbar navbar-dark navbar-expand-xl nav_">
+               <!-- Brand -->
+               <a class="navbar-brand mt-4" href="index.html"><img id="ic" src="img/edu_logo_black.png" class="img img-fluid"
+                     height="58px" width="108px"></a>
+      
+      
+      
+               <!-- Navbar links -->
+               <div class="collapse navbar-collapse mt-4" id="myNavbar">
+                  <ul class="navbar-nav mr-auto">
+                     <li class="nav-item">
+                        <a class="nav-link" href="http://blog.edubridgeacademy.com/">Blog</a>
+      
+      
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">EduTech Solutions</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="tracks.html" class="nav-link">Tracks</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#" class="nav-link">The Process</a>
+                     </li>
+                  </ul>
+                  <ul class="navbar-nav">
+                     <li class="nav-item">
+                        <a href="login.html" class="nav-link">Login</a>
+                     </li>
+                     <li class="nav-item">
+                        <button target="_blank" onclick="window.location='application_p_info.html'" type="button"
+                           class="nav-link" id="join-btn">Apply</button>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <!--Where navbar ends-->
+         </div> <!-- container-fluid ends -->
+      
+      
+      
+         <section>
+            <br>
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-3">
+                     <p>Hello Modupeoluwa Rita,</p>
+                     <h4>Application Process</h4>
+                  </div>
+                  <div class="col-lg-8">
+                     <ul class="nav nav-tabs bg-white round">
+                        <li class="nav-item navitem">
+                           <a class="nav-link disabled" href="#">Personal Information</a>
+                        </li>
+                        <li class="nav-item navitem">
+                           <a class="nav-link active" href="#">Assessment Test</a>
+                        </li>
+                        <li class="nav-item navitem">
+                           <a class="nav-link disabled" href="#">Video Interview</a>
+                        </li>
+                        <li class="nav-item navitem">
+                           <a class="nav-link disabled" href="#">Resources</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+
+
+
+
+
+
+        <!----->
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-12 col-lg-10 offset-lg-1 cust-card">
+                    <div class = "row">
+                        <div class = "col-4 col-lg-3 card-tabs" style = "border-bottom:5px solid #2E673D;
+    background-color:#F6FCF8; border-radius:25px 0 0 0;">
+                            Situational Judgment
+                        </div>
+                        <div class = "col-3 col-lg-2 card-tabs">
+                            Case Study
+                        </div>
+                        <div class = "col-3 col-lg-2 card-tabs">
+                            Video Interview
+                        </div>
+                        <div class = "col-2 col-lg-5 card-tabs">
+                   
+                        </div>
+                    </div>
+                    <div class = "row" style = "text-align:center; padding-top:10%; font-size:20px;">
+                        <div class = "col-12 col-lg-2 offset-lg-2 pb-4">
+                            <img src = "img/clock.svg" width="30px" height="30px"/><br><br>
+                            <strong>15 minutes</strong>
+                        </div>
+                        <div class = "col-12 col-lg-3 offset-lg-1 pb-4">
+                            <img src = "img/question.svg" width="30px" height="30px"/><br><br>
+                        <strong>18 questions</strong>
+                        </div>
+                        <div class = "col-12 col-lg-2 offset-lg-1 pb-4">
+                            <img src = "img/points.svg" width="30px"  height="30px"/><br><br>
+                        <strong>5 points</strong>
+                        </div>
+                    </div>
+                    <div class = "row" style = "text-align:center; padding-top:5%; font-size:18px;">
+                        <div class = "col-10 offset-1">
+                            The <strong>Situational Judgment</strong> test will be used to evaluate the candidate’s analytical skill and also used to measure their level of attention to details
+                        </div>
+                        <div class = "col-12 pt-4">
+                            <button type = "button" class = "btn start-btn">START TEST</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---=== Modal for submission confirmation ===--->
+        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#confirm-submit">
+            Confirmation Modal
+          </button>
+
+        <div class="modal" id="confirm-submit">
+            <div class="modal-dialog  modal-md modal-dialog-centered">
+              <div class="modal-content modal-confirm">
+                
+ 
+                <div class="modal-body">
+                    <p class = "modal-text">Are you sure you want to submit this test? You would not be able to edit after submission.</p>
+                </div>
+                <div class = "row">
+                    <div class = "col-10 offset-1">
+                            <button type = "button" class="btn confirm-btns" data-dismiss="modal" style="margin-right:2%; border:2px solid black;" >NO, EDIT ANSWER</button>
+                            <button type = "button" class="btn confirm-btns" style="background-color:#4DE897;" data-toggle="modal" data-target="#yes-submit">YES, SUBMIT</button>
+                    </div>
+                        
+                </div>
+              </div>
+            </div>
+          </div>
+          <!---=== End of modal for submission confirmation ===--->
+
+           <!---=== Modal for confirmation success ===--->
+        <div class="modal" id="yes-submit">
+            <div class="modal-dialog  modal-md modal-dialog-centered">
+              <div class="modal-content modal-confirm">
+                
+                <div class="modal-body">
+                    <p class = "modal-text">TEST HAS BEEN SUCCESSFULLY SUBMITTED</p>
+                </div>
+                <div class = "row">
+                    <div class = "col-10 offset-1 text-center">
+                            <button onclick="window.location='video_interview.html';" type = "button" class="btn confirm-btns" style="background-color:#4DE897;">GO TO NEXT STAGE</button>
+                    </div>
+                        
+                </div>
+              </div>
+            </div>
+          </div>
+          <!---=== End of modal for confirmation message ===--->
+</div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/first.js"></script>
+    
+    </body>
+    </html>
