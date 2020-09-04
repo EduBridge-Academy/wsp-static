@@ -1,0 +1,52 @@
+
+body {
+    font-family: 'M PLUS 1p', sans-serif;
+    
+    overflow-x:hidden; 
+    color: black;
+    font-weight: 500;
+    /* line-height: 2; */
+}
+html{
+  scroll-behavior: smooth;
+}
+  
+
+    /* ======== Hero Page ================= */
+
+
+/* ============ Hero Page Ends Here ================== */
+
+
+
+
+/* ================== Tracks section =========================== */
+
+
+/* ================== Tracks section ends here =========================== */
+
+
+
+
+/* ================== Testimony section =========================== */
+
+
+/* ============== Testimony section ends here ================= */
+
+
+
+
+/* =========================== MEDIA QUERIES ================================ */
+
+@media(max-width: 767px) {
+    .track-button {
+        margin-bottom: 2rem;
+    }
+    .headliner {
+      color: #2E673D;
+      font-weight: 700;
+      font-size: 40px;
+      text-align: center;
+  }
+}
+
